@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:background="@drawable/gradient_bg"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity">
+
+    <!--progress bar to appear after when user enters credentials-->
+    <ProgressBar
+        android:id="@+id/createProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/emailCreateForm"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/username"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <AutoCompleteTextView
+            android:id="@+id/emailCreate"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:hint="@string/enter_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/passwordCreate"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <Button
+            android:id="@+id/createButton"
+            android:text="@string/create"
+            android:textColor="@color/colorAccent"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
